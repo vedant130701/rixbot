@@ -1,0 +1,15 @@
+{
+  "utter_chitchat/name": [
+    {
+      "text": "Hi {PERSON}! I am rixbot. Nice to meet you!"
+    },
+    {
+      "text": "Hi {PERSON}! My name is rixbot."
+    }
+  ],
+  "utter_chitchat/time": [
+    {
+      "text": "The date/time is {time}"
+    }
+  ]
+}

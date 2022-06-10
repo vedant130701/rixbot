@@ -18,15 +18,48 @@ stories:
   - intent: deny
   - action: utter_unhappy
 
-- story: user tells his name
+- story: chitchat
   steps:
-  - intent: name
-  - action: utter_tellName
+  - intent: chitchat
+  - action: utter_chitchat
 
-- story: user asks the time
-  steps:
-  - intent: timeQuestion
-  - action: utter_time
+# - story: user tells his name
+#   steps:
+#   - intent: chitchat
+#   - slot_was_set: 
+#     - PERSON
+#   - action: utter_chitchat
+
+# - story: user does not tell his name
+#   steps:
+#   - intent: chitchat
+#   - slot_was_set: 
+#     - PERSON : null
+#   - action: utter_chitchat
+
+# - story: user tells time
+#   steps:
+#   - intent: chitchat
+#   - slot_was_set: 
+#     - time
+#   - action: utter_chitchat
+
+# - story: user does not tell time
+#   steps:
+#   - intent: chitchat
+#   - slot_was_set: 
+#     - time: null
+#   - action: utter_chitchat
+
+# - story: user tells his name
+#   steps:
+#   - intent: name
+#   - action: utter_tellName
+
+# - story: user asks the time
+#   steps:
+#   - intent: timeQuestion
+#   - action: utter_time
 
 # - story: happy path
 #   steps:

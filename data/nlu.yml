@@ -92,7 +92,7 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
 
-- intent: name
+- intent: chitchat/name
   examples: |
     - I am [Vedant](PERSON)
     - I am [Vedant Rishi Das](PERSON)
@@ -109,8 +109,18 @@ nlu:
     - Dr. [Vedant](PERSON)
     - Dr. [Vedant Rishi Das](PERSON)
     - I am Mr. [Vedant](PERSON)
-
-- intent: timeQuestion
+  
+- intent: chitchat/noname
+  examples: |
+    - no, I won't tell my name
+    - I don't want to reveal myself
+    - no, I don't want to reveal myself
+    - no name
+    - I don't want to be called
+    - I won't say my name
+    - I won't tell you
+  
+- intent: chitchat/time
   examples: |
     - What is the [time now](time)?
     - What day is it [today](time)?
@@ -121,3 +131,38 @@ nlu:
     - What will it be [tomorrow](time)?
     - What was the [time 10 seconds before](time)?
     - What date will be [20 years from now](time)?
+
+- intent: chitchat/notime
+  examples: |
+    - What is time?
+    - no time
+    - time
+# - intent: name
+#   examples: |
+#     - I am [Vedant](PERSON)
+#     - I am [Vedant Rishi Das](PERSON)
+#     - I am [Rishi](PERSON), who are you?
+#     - My Name is [Vedant](PERSON)
+#     - My name is [rishi](PERSON), who are you?
+#     - [Vedant Rishi Das](PERSON)
+#     - Vedant
+#     - Rishi
+#     - [Das](PERSON)
+#     - Mr. [Rishi](PERSON)
+#     - Ms. [Das](PERSON)
+#     - Mrs. [Das](PERSON)
+#     - Dr. [Vedant](PERSON)
+#     - Dr. [Vedant Rishi Das](PERSON)
+#     - I am Mr. [Vedant](PERSON)
+
+# - intent: timeQuestion
+#   examples: |
+#     - What is the [time now](time)?
+#     - What day is it [today](time)?
+#     - What day was it [yesterday](time)?
+#     - What will be the [time after 10 seconds](time)?
+#     - Tell the [time](time)
+#     - What O'clock [now](time)?
+#     - What will it be [tomorrow](time)?
+#     - What was the [time 10 seconds before](time)?
+#     - What date will be [20 years from now](time)?
