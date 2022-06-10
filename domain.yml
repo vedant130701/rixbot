@@ -1,0 +1,59 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - name
+
+entities:
+  - PERSON
+
+slots:
+  PERSON:
+    type: any
+    influence_conversation: false
+    mappings:
+    - entity: PERSON
+      type: from_entity
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_askName:
+  - text: "What is your name?"
+
+  utter_tellName:
+  - text: "Hi {PERSON}! I am rixbot. Nice to meet you!"
+  - text: "Hi {PERSON}! My name is rixbot."
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_unhappy:
+  - text: "Sorry that you are sad, hopefully I can cheer you up another time :("
+
+  utter_goodbye:
+  - text: "Bye {PERSON}"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_default:
+  - text: I didn't quite understand that. Could you rephrase?
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
