@@ -9,9 +9,11 @@ intents:
   - mood_unhappy
   - bot_challenge
   - name
+  - timeQuestion
 
 entities:
   - PERSON
+  - time
 
 slots:
   PERSON:
@@ -19,6 +21,13 @@ slots:
     influence_conversation: false
     mappings:
     - entity: PERSON
+      type: from_entity
+  
+  time:
+    type: any
+    influence_conversation: false
+    mappings:
+    - entity: time
       type: from_entity
 
 responses:
@@ -53,6 +62,10 @@ responses:
 
   utter_default:
   - text: I didn't quite understand that. Could you rephrase?
+
+  utter_time:
+  - text: "The date/time is {time}"
+
 
 session_config:
   session_expiration_time: 60

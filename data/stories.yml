@@ -23,6 +23,11 @@ stories:
   - intent: name
   - action: utter_tellName
 
+- story: user asks the time
+  steps:
+  - intent: timeQuestion
+  - action: utter_time
+
 # - story: happy path
 #   steps:
 #   - intent: greet
