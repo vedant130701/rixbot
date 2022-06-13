@@ -1,0 +1,28 @@
+{
+  "utter_chitchat/name": [
+    {
+      "text": "Hi {PERSON}! I am rixbot. Nice to meet you!"
+    },
+    {
+      "text": "Hi {PERSON}! My name is rixbot."
+    }
+  ],
+  "utter_chitchat/time": [
+    {
+      "text": "The date/time is {time}"
+    }
+  ],
+  "utter_chitchat/noname": [
+    {
+      "text": "I am rixbot. Nice to meet you!"
+    },
+    {
+      "text": "Hi! My name is rixbot."
+    }
+  ],
+  "utter_chitchat/notime": [
+    {
+      "text": "You need to ask for a certain period, or exact date."
+    }
+  ]
+}

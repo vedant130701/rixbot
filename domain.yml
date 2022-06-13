@@ -9,6 +9,7 @@ intents:
   - mood_unhappy
   - bot_challenge
   - chitchat
+  - joke
   # - name
   # - timeQuestion
 
@@ -30,6 +31,9 @@ slots:
     mappings:
     - entity: time
       type: from_entity
+
+actions:
+  - action_tell_joke
 
 responses:
   utter_greet:

@@ -137,3 +137,15 @@ nlu:
     - What is time?
     - no time
     - time
+
+- intent:  joke
+  examples: |
+    - Tell me a joke
+    - Tell me something funny
+    - Give me something to laugh about
+    - Joke away
+    - Become a Joker
+    - I want to hear something funny
+    - I want to hear a joke
+    - Be funny
+    - Be funny about something

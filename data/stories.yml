@@ -22,3 +22,8 @@ stories:
   steps:
   - intent: chitchat
   - action: utter_chitchat
+
+- story: joke
+  steps:
+  - intent: joke
+  - action: action_tell_joke
