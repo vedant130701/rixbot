@@ -149,3 +149,11 @@ nlu:
     - I want to hear a joke
     - Be funny
     - Be funny about something
+    - Tell me a joke on [programming](joke_type)
+    - Tell me a joke that is [dark](joke_type)
+    - Tell me a [dark] joke(joke_type) 
+
+- lookup: joke_type
+  examples: |
+    - programming
+    - dark

@@ -16,20 +16,28 @@ intents:
 entities:
   - PERSON
   - time
+  - joke_type
 
 slots:
   PERSON:
     type: text
-    influence_conversation: true
+    influence_conversation: false
     mappings:
     - entity: PERSON
       type: from_entity
   
   time:
     type: text
-    influence_conversation: true
+    influence_conversation: false
     mappings:
     - entity: time
+      type: from_entity
+    
+  joke_type:
+    type: text
+    influence_conversation: false
+    mappings:
+    - entity: joke_type
       type: from_entity
 
 actions:

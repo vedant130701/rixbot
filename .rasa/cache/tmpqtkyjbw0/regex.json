@@ -1,0 +1,6 @@
+[
+  {
+    "name": "joke_type",
+    "pattern": "(\\bcomputer\\ science\\b|\\bcomputers\\b|\\bscience\\b|\\bdark\\b|\\bdark\\ joke\\b)"
+  }
+]
