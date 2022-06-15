@@ -33,10 +33,11 @@ stories:
   - intent: joke
   - action: action_tell_joke
 
-- story: greet and subscribe
+- story: ask name
   steps:
-  - intent: subscribe
-  - action: newsletter_form
-  - active_loop: newsletter_form
+  - intent: greet
+  - action: utter_greet
+  - action: name_form
+  - active_loop: name_form
   - active_loop: null
-  - action: utter_subscribed
+  - action: utter_greetName

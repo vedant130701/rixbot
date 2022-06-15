@@ -2,12 +2,6 @@ version: "3.1"
 
 rules:
 
-- rule: Welcome user and ask for name
-  conversation_start: true
-  steps:
-  - intent: greet
-  - action: utter_greet
-
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye

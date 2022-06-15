@@ -10,15 +10,14 @@ intents:
   - bot_challenge
   - chitchat
   - joke
-  - subscribe
-  - inform_email
+  - inform_name
   # - name
   # - timeQuestion
 
 entities:
   - time
   - joke_type
-  - email
+  - name
 
 slots:
   
@@ -36,17 +35,17 @@ slots:
     - entity: joke_type
       type: from_entity
 
-  email:
+  name:
     type: text
     influence_conversation: false
     mappings:
-    - entity: email
+    - entity: name
       type: from_entity
 
 forms:
-  newsletter_form:
+  name_form:
     required_slots:
-      - email
+      - name
 
 actions:
   - action_tell_joke
@@ -83,10 +82,10 @@ responses:
   utter_chitchat/notime:
   - text: "You need to ask for a certain period, or exact date."
 
-  utter_ask_email:
-    - text: What is your email address?
-  utter_subscribed:
-    - text: You're all set! Check your inbox at {email} to confirm your subscription.
+  utter_ask_name:
+    - text: What is your name
+  utter_greetName:
+    - text: Hi {name}, great to meet you!
 
 session_config:
   session_expiration_time: 60

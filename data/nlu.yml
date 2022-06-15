@@ -125,19 +125,13 @@ nlu:
     - Tell me a joke that is [dark](joke_type)
     - Tell me a [dark] joke(joke_type) 
 
-- intent: subscribe
-  examples: |
-    - I want to get the newsletter
-    - Can you send me the newsletter?
-    - Can you sign me up for the newsletter?
-    - I want to subscribe to a newsletter.
 
-- intent: inform_email
+- intent: inform_name
   examples: |
-    - My email is [example@example.com](email)
-    - [random@example.com](email)
-    - Please send it to [anything@example.com](email)
-    - Email is [something@example.com](email)
+    - My name is [Vedant Rishi Das](name)
+    - [Rishi](name)
+    - [Vedant Rishi Das](name)
+    - Mr. [Das](name)
 
 - lookup: joke_type
   examples: |

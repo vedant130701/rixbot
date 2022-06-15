@@ -1,6 +1,0 @@
-[
-  {
-    "name": "joke_type",
-    "pattern": "(\\bprogramming\\b|\\bdark\\b)"
-  }
-]
