@@ -1,0 +1,12 @@
+{
+  "utter_chitchat/time": [
+    {
+      "text": "The date/time is {time}"
+    }
+  ],
+  "utter_chitchat/notime": [
+    {
+      "text": "You need to ask for a certain period, or exact date."
+    }
+  ]
+}

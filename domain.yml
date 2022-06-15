@@ -10,21 +10,17 @@ intents:
   - bot_challenge
   - chitchat
   - joke
+  - subscribe
+  - inform_email
   # - name
   # - timeQuestion
 
 entities:
-  - PERSON
   - time
   - joke_type
+  - email
 
 slots:
-  PERSON:
-    type: text
-    influence_conversation: false
-    mappings:
-    - entity: PERSON
-      type: from_entity
   
   time:
     type: text
@@ -40,15 +36,24 @@ slots:
     - entity: joke_type
       type: from_entity
 
+  email:
+    type: text
+    influence_conversation: false
+    mappings:
+    - entity: email
+      type: from_entity
+
+forms:
+  newsletter_form:
+    required_slots:
+      - email
+
 actions:
   - action_tell_joke
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_askName:
-  - text: "What is your name?"
+  - text: "Hey! I am rixbot. How can I help you?"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -64,7 +69,7 @@ responses:
   - text: "Sorry that you are sad, hopefully I can cheer you up another time :("
 
   utter_goodbye:
-  - text: "Bye {PERSON}"
+  - text: "Bye"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
@@ -72,19 +77,16 @@ responses:
   utter_default:
   - text: I didn't quite understand that. Could you rephrase?
 
-  utter_chitchat/name:
-  - text: "Hi {PERSON}! I am rixbot. Nice to meet you!"
-  - text: "Hi {PERSON}! My name is rixbot."
-
   utter_chitchat/time:
   - text: "The date/time is {time}"
 
-  utter_chitchat/noname:
-  - text: "I am rixbot. Nice to meet you!"
-  - text: "Hi! My name is rixbot."
-
   utter_chitchat/notime:
   - text: "You need to ask for a certain period, or exact date."
+
+  utter_ask_email:
+    - text: What is your email address?
+  utter_subscribed:
+    - text: You're all set! Check your inbox at {email} to confirm your subscription.
 
 session_config:
   session_expiration_time: 60

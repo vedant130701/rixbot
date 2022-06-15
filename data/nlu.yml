@@ -91,34 +91,6 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
-
-- intent: chitchat/name
-  examples: |
-    - I am [Vedant](PERSON)
-    - I am [Vedant Rishi Das](PERSON)
-    - I am [Rishi](PERSON), who are you?
-    - My Name is [Vedant](PERSON)
-    - My name is [rishi](PERSON), who are you?
-    - [Vedant Rishi Das](PERSON)
-    - Vedant
-    - Rishi
-    - [Das](PERSON)
-    - Mr. [Rishi](PERSON)
-    - Ms. [Das](PERSON)
-    - Mrs. [Das](PERSON)
-    - Dr. [Vedant](PERSON)
-    - Dr. [Vedant Rishi Das](PERSON)
-    - I am Mr. [Vedant](PERSON)
-  
-- intent: chitchat/noname
-  examples: |
-    - no, I won't tell my name
-    - I don't want to reveal myself
-    - no, I don't want to reveal myself
-    - no name
-    - I don't want to be called
-    - I won't say my name
-    - I won't tell you
   
 - intent: chitchat/time
   examples: |
@@ -152,6 +124,20 @@ nlu:
     - Tell me a joke on [programming](joke_type)
     - Tell me a joke that is [dark](joke_type)
     - Tell me a [dark] joke(joke_type) 
+
+- intent: subscribe
+  examples: |
+    - I want to get the newsletter
+    - Can you send me the newsletter?
+    - Can you sign me up for the newsletter?
+    - I want to subscribe to a newsletter.
+
+- intent: inform_email
+  examples: |
+    - My email is [example@example.com](email)
+    - [random@example.com](email)
+    - Please send it to [anything@example.com](email)
+    - Email is [something@example.com](email)
 
 - lookup: joke_type
   examples: |

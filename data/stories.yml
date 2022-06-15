@@ -18,6 +18,11 @@ stories:
   - intent: deny
   - action: utter_unhappy
 
+- story: user is happy
+  steps:
+  - intent: mood_great
+  - action: utter_happy
+
 - story: chitchat
   steps:
   - intent: chitchat
@@ -27,3 +32,11 @@ stories:
   steps:
   - intent: joke
   - action: action_tell_joke
+
+- story: greet and subscribe
+  steps:
+  - intent: subscribe
+  - action: newsletter_form
+  - active_loop: newsletter_form
+  - active_loop: null
+  - action: utter_subscribed

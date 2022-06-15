@@ -7,7 +7,6 @@ rules:
   steps:
   - intent: greet
   - action: utter_greet
-  - action: utter_askName
 
 - rule: Say goodbye anytime the user says goodbye
   steps:
